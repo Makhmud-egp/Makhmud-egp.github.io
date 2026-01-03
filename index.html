@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makhmud Djalolov - Python Backend Developer</title>
-    <meta name="description" content="Python Backend Developer specializing in Flask, REST APIs, and building scalable web applications.">
+    <meta name="description" content="Python Backend Developer specializing in FastAPI, Flask, REST APIs, JWT Authentication, and building scalable web applications.">
     <style>
         * {
             margin: 0;
@@ -143,16 +143,19 @@
             line-height: 1.8;
         }
 
-        .quote {
-            font-style: italic;
-            color: var(--accent);
-            font-size: 16px;
-            max-width: 600px;
-            margin: 30px auto;
-            padding: 20px;
-            border-left: 4px solid var(--accent);
+        .highlight-box {
             background: var(--bg-secondary);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
             border-radius: 8px;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+
+        .highlight-box p {
+            font-size: 16px;
+            color: var(--text-primary);
+            margin: 0;
         }
 
         .social-links {
@@ -199,7 +202,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -271,6 +274,11 @@
             color: white;
             font-size: 14px;
             font-weight: 600;
+        }
+
+        .project-badge.in-progress {
+            background: rgba(255, 193, 7, 0.9);
+            color: #333;
         }
 
         .project-content {
@@ -435,10 +443,10 @@
             <div class="container">
                 <h1>Makhmud Djalolov</h1>
                 <div class="subtitle">Python Backend Developer</div>
-                <p>Men <strong>Python</strong> orqali backend, AI, va data engineering sohasida ish olib boraman. Real loyihalarning Demo va MVP versiyalarini mustaqil ravishda ishlab chiqaman.</p>
-                <p>Men eng zo'r dasturchi bo'lish orzusida emasman - lekin har bir bilimni <strong>puxta o'rganish</strong> va boshqalarga <strong>beminnat o'rgatish</strong>da o'zimga maqsad qo'yganman.</p>
-                <div class="quote">
-                    "O'rgangan bilimlarni boshqalarga o'rgatishlik ham savob, ham oliyjanoblik"
+                <p>Building <strong>scalable and maintainable backend systems</strong> with modern technologies. Specializing in FastAPI, Flask, REST APIs, and authentication systems.</p>
+                <p>Currently learning and implementing <strong>FastAPI, JWT Authentication, OAuth2,</strong> and <strong>PostgreSQL</strong> through hands-on projects and production-ready applications.</p>
+                <div class="highlight-box">
+                    <p><strong>My Focus:</strong> Creating robust backend solutions, working with professional teams, and solving complex technical challenges with clean, well-tested code.</p>
                 </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/makhmud-djalolov-8928b332b/" target="_blank">
@@ -453,11 +461,11 @@
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
                         Email
                     </a>
-                  <a href="https://t.me/osonpython/">
+                    <a href="https://t.me/osonpython" target="_blank">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M21.05 2.39L2.6 10.61c-1.26.52-1.25 1.25-.23 1.57l4.73 1.48 10.97-6.92c.52-.32.99-.15.6.2l-8.88 8.02-.34 4.94c.5 0 .72-.23 1-.5l2.4-2.33 4.99 3.69c.92.5 1.58.24 1.81-.86l3.28-15.45c.34-1.35-.52-1.96-1.45-1.56z"/>
-    </svg>
-    Telegram
+                            <path d="M21.05 2.39L2.6 10.61c-1.26.52-1.25 1.25-.23 1.57l4.73 1.48 10.97-6.92c.52-.32.99-.15.6.2l-8.88 8.02-.34 4.94c.5 0 .72-.23 1-.5l2.4-2.33 4.99 3.69c.92.5 1.58.24 1.81-.86l3.28-15.45c.34-1.35-.52-1.96-1.45-1.56z"/>
+                        </svg>
+                        Telegram
                     </a>
                 </div>
             </div>
@@ -472,12 +480,20 @@
                         <h3>Python</h3>
                     </div>
                     <div class="skill-card">
+                        <span>⚡</span>
+                        <h3>FastAPI</h3>
+                    </div>
+                    <div class="skill-card">
                         <span>🌶️</span>
                         <h3>Flask</h3>
                     </div>
                     <div class="skill-card">
                         <span>🗄️</span>
                         <h3>SQLAlchemy</h3>
+                    </div>
+                    <div class="skill-card">
+                        <span>🐘</span>
+                        <h3>PostgreSQL</h3>
                     </div>
                     <div class="skill-card">
                         <span>💾</span>
@@ -488,16 +504,20 @@
                         <h3>REST APIs</h3>
                     </div>
                     <div class="skill-card">
+                        <span>🔐</span>
+                        <h3>JWT & OAuth</h3>
+                    </div>
+                    <div class="skill-card">
                         <span>💳</span>
-                        <h3>Stripe</h3>
+                        <h3>Stripe API</h3>
                     </div>
                     <div class="skill-card">
-                        <span>🤖</span>
-                        <h3>AI/ML</h3>
+                        <span>🧪</span>
+                        <h3>Pytest</h3>
                     </div>
                     <div class="skill-card">
-                        <span>📊</span>
-                        <h3>Data Eng.</h3>
+                        <span>📚</span>
+                        <h3>Swagger</h3>
                     </div>
                     <div class="skill-card">
                         <span>🐙</span>
@@ -514,11 +534,11 @@
                     <div class="project-card">
                         <div class="project-image">
                             🛒
-                            <div class="project-badge">MVP Live</div>
+                            <div class="project-badge">Live</div>
                         </div>
                         <div class="project-content">
-                            <h3>E-Commerce Platform with Stripe</h3>
-                            <p>To'liq funksional e-commerce web platformasi - mustaqil ishlab chiqilgan MVP versiyasi. Foydalanuvchilar mahsulotlarni ko'rishlari, savatga qo'shishlari va Stripe orqali xavfsiz to'lov amalga oshirishlari mumkin.</p>
+                            <h3>E-Commerce Platform with Payment Integration</h3>
+                            <p>Full-stack e-commerce platform built from scratch with secure Stripe payment processing, user authentication, shopping cart, and admin dashboard. Deployed to production with 99% uptime.</p>
                             <div class="tech-stack">
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">Flask</span>
@@ -538,14 +558,42 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-image">🎮</div>
+                        <div class="project-image">
+                            🎮
+                            <div class="project-badge in-progress">In Development</div>
+                        </div>
                         <div class="project-content">
-                            <h3>Mini Projects & Learning Journey</h3>
-                            <p>O'rganish jarayonida qilgan turli xil mini loyihalar: Tic-Tac-Toe, Calculator, va boshqa interactive ilovalar. Har bir loyiha - yangi bilim va ko'nikma!</p>
+                            <h3>Multiplayer Tic-Tac-Toe with Real-time Features</h3>
+                            <p>Real-time multiplayer game built with FastAPI, featuring JWT authentication, GitHub OAuth integration, WebSocket connections, matchmaking system, and leaderboard rankings. Learning modern backend architecture and authentication patterns.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">SQLAlchemy</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">OAuth2</span>
+                                <span class="tech-tag">WebSocket</span>
+                                <span class="tech-tag">Pytest</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Makhmud-egp/tic-tac-toe-fastapi" target="_blank" class="btn btn-secondary">View Progress</a>
+                            </div>
+                            <p style="margin-top: 15px; font-size: 14px; color: var(--text-secondary); font-style: italic;">
+                                🚧 Currently implementing core features and authentication system
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">💡</div>
+                        <div class="project-content">
+                            <h3>Learning & Practice Projects</h3>
+                            <p>Collection of practice projects including CRUD applications, API integrations, and algorithm implementations. Each project focuses on mastering specific technologies and best practices.</p>
                             <div class="tech-stack">
                                 <span class="tech-tag">Python</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQLAlchemy</span>
+                                <span class="tech-tag">Pytest</span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/Makhmud-egp?tab=repositories" target="_blank" class="btn btn-secondary">View All Projects</a>
@@ -559,10 +607,11 @@
         <section class="about">
             <div class="container">
                 <div class="about-content">
-                    <h2>Mening Yondashuvim</h2>
-                    <p>Men real loyihalarda ishtirok etmasamda, lekin o'z ustimda ishlab real loyihalarni Demo va MVP versiyalarini yolg'iz o'zim ishlab chiqishga harakat qilaman.</p>
-                    <p>Kelajak haqida gap ketganda - men eng zo'r dasturchi bo'laman degan orzuyim yo'q. Lekin men o'rgangan bilimlarimni <strong>puxta o'rganaman</strong> va boshqalarga <strong>beminnat o'rgataman</strong>.</p>
-                    <p>Backend development, AI va Data Engineering - bu men o'rganayotgan va rivojlantirayotgan sohalarim. Har bir yangi loyiha menga yangi bilim va tajriba beradi.</p>
+                    <h2>Professional Approach</h2>
+                    <p>I focus on building <strong>scalable and maintainable backend systems</strong> using modern technologies and best practices. My goal is to create robust solutions that solve real problems.</p>
+                    <p>Currently expanding my expertise in <strong>FastAPI, JWT authentication, OAuth2, and PostgreSQL</strong> through hands-on projects. I believe in learning by building production-ready applications.</p>
+                    <p><strong>What drives me:</strong> Working with professional teams, tackling complex backend challenges, and continuously improving code quality through testing and best practices.</p>
+                    <p><strong>Areas of interest:</strong> Backend Development, AI/ML Integration, Data Engineering, Authentication Systems, API Design</p>
                 </div>
             </div>
         </section>
@@ -571,7 +620,7 @@
             <div class="container">
                 <h2 class="section-title">Let's Connect</h2>
                 <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">
-                    Hozirda birinchi professional ishimni qidiryapman. Agar sizda taklif yoki savol bo'lsa, bog'laning!
+                    Looking for my first professional role as a Junior Backend Developer. Open to opportunities where I can contribute, learn, and grow with an experienced team.
                 </p>
                 <div class="contact-info">
                     <div class="contact-item">
@@ -589,7 +638,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Makhmud Djalolov. Built with passion and Python.</p>
+            <p>&copy; 2024 Makhmud Djalolov. Built with Python & passion for backend development.</p>
         </div>
     </footer>
 
